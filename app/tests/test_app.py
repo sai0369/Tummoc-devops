@@ -15,3 +15,4 @@ def test_home(client):
 
 def test_health(client):
     assert client.get("/health").get_json()["status"] == "healthy"
+
