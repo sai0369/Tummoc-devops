@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r app/requirements.txt
-      - run: pytest app/tests/ -v
+      - run: pytest app/tests/ -v --rootdir=app
 
   build:
     name: Build & Push Docker Image
